@@ -1,2 +1,2 @@
 # Recicle-Ja
- Site RecicleJá, mostra os pontos de coleta.
+ Site em HTML e CSS para mostrar aos usuários locais no mapa com pontos de coleta de recicláveis.

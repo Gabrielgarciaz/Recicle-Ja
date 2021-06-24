@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+/* Estilo barra de rolagem */
+::-webkit-scrollbar{
+	width: 10px;
+}
+::-webkit-scrollbar-track{
+	background-color: rgb(255, 255, 255);
+}
+::-webkit-scrollbar-thumb{
+	background-color: #bbb;
+	border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: #ccc;
+}
+/* Fim estilo barra de rolagem */
+/* Estilo menu */
+nav {
+	height: 70px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.966);
+}
+nav ul {
+	float: right;
+	margin-right: 410px;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a {
+	background-color: #008037;
+	color: rgb(255, 255, 255);
+	font-size: 17px;
+	font-family: Arial;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+a.active, a:hover {
+	background:rgba(255, 255, 255, 0.73);
+	transition: .5s;
+    
+}    
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+/* Fim estilo menu */
+
+/*                                   PÁGINA 1                               /* 
+
+/* Estilo texto logo */
+.logo h2{
+	color:#008037;
+	font-size: 1.5em;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-490px;
+	margin-top:-175px;
+}
+.logo h4{
+	font-family:'Poppins';
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-515px;
+	margin-top:-155px;
+}
+/* Fim estilo texto logo */
+/* Estilo texto principal */
+.principal h3 {
+	font-size: 2.3em;
+    color: rgb(78, 82, 85);
+    position:absolute;
+    left:75%;
+    top:40%;
+    margin-left:-280px;
+    margin-top:-50px;
+	font-family: 'Poppins', Helvetica, sans-serif;;
+}
+.principal h4 {
+	font-size: 2.3em;
+    color: #008037d0;
+    position:absolute;
+    left:75%;
+    top:40%;
+    margin-left:-320px;
+    margin-top:0px;
+	font-family: 'Poppins', Helvetica, sans-serif;
+}
+/* Fim estilo texto principal */
+/* Estilo parte informações tipos recicláveis */
+.informacoes{
+	background-color: #bbb;
+}
+.informacoes h1{
+	font-size: 1.8em;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-family: 'Poppins', Helvetica, sans-serif;
+}
+.info-a{
+	width: 320px;
+    display: inline-block;
+    margin-left: 250px;
+	padding: 15px;
+	font-family: 'Poppins', Helvetica, sans-serif;
+	color: white;
+}
+/* Fim estilo parte informações tipos recicláveis 
+ 
+/*                                     PÁGINA 2                             */
+
+/*    Estilo apresentação personagem    */
+.personagem{
+	color: aliceblue;
+	font-size: 1.2em;
+	font-family: 'Poppins', Helvetica, sans-serif;
+	position:absolute;
+    left:75%;
+    top:40%;
+    margin-left:-550px;
+    margin-top:-80px;
+}
+/*   Fim estilo apresentação personagem   */
+
+/*                                     PÁGINA 3                               */
+header {
+text-align: center;
+font-family: 'Poppins', Helvetica, sans-serif;
+background-color: rgb(78, 82, 85);
+color: white;
+}
+.fotos{
+	background-color: #bbb;
+}
+div.box {
+    width: 300px;
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+	padding: 50px;
+}
+div.box p{
+	font-family: 'Poppins', Helvetica, sans-serif;
+	color: white;
+}
+footer{
+	font-size: 1.2em;
+	text-align: center;
+	font-family: 'Poppins', Helvetica, sans-serif;
+	padding: 10px;
+}
+/*                                   PÁGINA 4                              */
+
+/* Estilo foto do sobre nóes */
+.fotosobre{
+	position:absolute;
+    left:75%;
+    top:40%;
+    margin-left: -750px;
+    margin-top:0px;
+}
+/* Fim estilo do foto sobre nós */
+/* Estilo texto sobre nós */
+.sobre{
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(78, 82, 85);
+	text-align: center;
+	font-size: 18px;
+	position:absolute;
+    left:75%;
+    top:40%;
+    margin-left: -400px;
+    margin-top:20px;
+}
+/* Fim estilo texto sobre nós */
+/* Estilo linha divisória vertical */
+   .linha-vertical {
+	border-left: 2px solid;
+	border-radius: 20px;
+	box-sizing:border-box;
+	height: 300px;
+	position:absolute;
+	left:75%;
+	top:40%;
+	margin-left: -423px;
+	margin-top:-40px;
+   }
+/* Fim estilo linha divisória vertical */  
+
+/*                                    PÁGINA 5                                */
+
+/* Estilo formulário cálculo*/
+.row{
+	padding: 0 50px;
+	display: table;
+	width: 100%;
+}
+form{
+	width: 50%;
+	margin: 0 auto;
+	box-shadow: 0 4px 8px #999;
+}
+input{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 2px;
+}
+label{
+	font-weight: bold;
+	padding-bottom: 5px;
+	display: inline-block;
+	font-family: 'Poppins', Helvetica, sans-serif;
+}
+button{
+	background-color: white;
+	border: 1px solid #008037d0;
+	color: #008037d0;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 5px;
+}
+/* Fim estilo formulário cálculo */
+/* Estilo Contato */
+.contato{
+	font-size: 1.2em;
+	text-align: center;
+	font-family: 'Poppins', Helvetica, sans-serif;
+	padding: 30px;
+}
+/* Fim estilo contato */
+
+/*                                 FIM PÁGINA 5                                 */
