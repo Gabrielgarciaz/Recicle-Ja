@@ -22,11 +22,14 @@
 	background-color: #ccc;
 }
 /* Fim estilo barra de rolagem */
+body{
+	font-family: 'Poppins', Helvetica, sans-serif;
+}
 /* Estilo menu */
 nav {
 	height: 70px;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.966);
+	background-color: rgb(78, 82, 85);
 }
 nav ul {
 	float: right;
@@ -78,7 +81,6 @@ a.active, a:hover {
 	margin-top:-175px;
 }
 .logo h4{
-	font-family:'Poppins';
 	position:absolute;
 	left:50%;
 	top:50%;
@@ -95,7 +97,6 @@ a.active, a:hover {
     top:40%;
     margin-left:-280px;
     margin-top:-50px;
-	font-family: 'Poppins', Helvetica, sans-serif;;
 }
 .principal h4 {
 	font-size: 2.3em;
@@ -105,7 +106,6 @@ a.active, a:hover {
     top:40%;
     margin-left:-320px;
     margin-top:0px;
-	font-family: 'Poppins', Helvetica, sans-serif;
 }
 /* Fim estilo texto principal */
 /* Estilo parte informações tipos recicláveis */
@@ -117,14 +117,12 @@ a.active, a:hover {
 	color: white;
 	text-align: center;
 	padding: 10px;
-	font-family: 'Poppins', Helvetica, sans-serif;
 }
 .info-a{
 	width: 320px;
     display: inline-block;
     margin-left: 250px;
 	padding: 15px;
-	font-family: 'Poppins', Helvetica, sans-serif;
 	color: white;
 }
 /* Fim estilo parte informações tipos recicláveis 
@@ -135,7 +133,6 @@ a.active, a:hover {
 .personagem{
 	color: aliceblue;
 	font-size: 1.2em;
-	font-family: 'Poppins', Helvetica, sans-serif;
 	position:absolute;
     left:75%;
     top:40%;
@@ -147,9 +144,7 @@ a.active, a:hover {
 /*                                     PÁGINA 3                               */
 header {
 text-align: center;
-font-family: 'Poppins', Helvetica, sans-serif;
-background-color: rgb(78, 82, 85);
-color: white;
+color: black;
 }
 .fotos{
 	background-color: #bbb;
@@ -162,39 +157,29 @@ div.box {
 	padding: 50px;
 }
 div.box p{
-	font-family: 'Poppins', Helvetica, sans-serif;
 	color: white;
 }
-footer{
-	font-size: 1.2em;
+.empresas-parceiras{
 	text-align: center;
-	font-family: 'Poppins', Helvetica, sans-serif;
-	padding: 10px;
+	padding: 20px;
 }
 /*                                   PÁGINA 4                              */
 
 /* Estilo foto do sobre nóes */
+/* Estilo texto sobre nós */
+.sobre-a{
+	padding: 80px;
+	margin-left: 460px;
+}
+/* Fim estilo texto sobre nós */
 .fotosobre{
 	position:absolute;
     left:75%;
     top:40%;
-    margin-left: -750px;
-    margin-top:0px;
+    margin-left: -350px;
+    margin-top:-73px;
 }
 /* Fim estilo do foto sobre nós */
-/* Estilo texto sobre nós */
-.sobre{
-	font-family: Arial, Helvetica, sans-serif;
-	color: rgb(78, 82, 85);
-	text-align: center;
-	font-size: 18px;
-	position:absolute;
-    left:75%;
-    top:40%;
-    margin-left: -400px;
-    margin-top:20px;
-}
-/* Fim estilo texto sobre nós */
 /* Estilo linha divisória vertical */
    .linha-vertical {
 	border-left: 2px solid;
@@ -204,8 +189,8 @@ footer{
 	position:absolute;
 	left:75%;
 	top:40%;
-	margin-left: -423px;
-	margin-top:-40px;
+	margin-left: -460px;
+	margin-top:-115px;
    }
 /* Fim estilo linha divisória vertical */  
 
@@ -216,11 +201,13 @@ footer{
 	padding: 0 50px;
 	display: table;
 	width: 100%;
+	padding: 40px;
 }
 form{
 	width: 50%;
 	margin: 0 auto;
 	box-shadow: 0 4px 8px #999;
+	padding: 20px;
 }
 input{
 	width: 100%;
@@ -231,7 +218,6 @@ label{
 	font-weight: bold;
 	padding-bottom: 5px;
 	display: inline-block;
-	font-family: 'Poppins', Helvetica, sans-serif;
 }
 button{
 	background-color: white;
@@ -240,14 +226,16 @@ button{
 	font-weight: bold;
 	padding: 10px;
 	border-radius: 5px;
+
 }
 /* Fim estilo formulário cálculo */
 /* Estilo Contato */
 .contato{
 	font-size: 1.2em;
 	text-align: center;
-	font-family: 'Poppins', Helvetica, sans-serif;
 	padding: 30px;
+	background-color: rgb(78, 82, 85);
+	color: white;
 }
 /* Fim estilo contato */
 
