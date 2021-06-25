@@ -11,10 +11,6 @@
 <body>   
 <!-- Sessão menu -->
 <nav>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-    </label>
     <ul>
         <li><a class="active" href="index.html">Início</a></li>
         <li><a href="locais.html">Locais</a></li>
@@ -23,24 +19,18 @@
     </ul>
 </nav>
 <!-- Fim sessão menu -->
-<!-- Sessão imagem de fundo-->
-<picture ondragstart="return false">
-    <source media="(max-width: 750px)" srcset="img/fundop.jpg" type="image/jpg">
-    <source media="(max-width: 1050px)" srcset="img/fundom.jpg" type="image/jpg">
-    <img src="img/fundog.jpg" alt="Imagem flexível com os tamanhos">
-</picture>
-<!-- Fim sessão imagem de fundo --> 
-<!-- Sessão texto logo -->
-<div class="logo">
-    <h2>RecicleJá!</h2>
-    <h4>Ganhe fazendo o bem.</h4> 
-</div>
-<!-- Fim sessão texto logo -->
-<!-- Sessão texto principal -->
-<div class="principal">
-    <h3>Recicle hoje, colha amanhã!</h3>
-    <h4>RecicleJá é um novo projeto aonde você pode encontrar pontos de coleta e fazer o cálculo dos créditos que vai ganhar em troca dos recicláveis.</h4>
-</div>    
+<header class="principal">
+    <div>
+    <picture ondragstart="return false">
+        <source media="(max-width: 750px)" src="img/fundop.png" type="image/jpg">
+        <source media="(max-width: 1050px)" src="img/fundom.png" type="image/jpg">
+        <img src="img/fundog.png" alt="Imagem flexível com os tamanhos">
+    </picture>
+    <div>
+    <h1>Recicle hoje, colha amanhã!</h1>
+    <h3>RecicleJá é um novo projeto aonde você pode encontrar pontos de coleta e fazer o cálculo dos créditos que vai ganhar em troca dos recicláveis</h3>
+    </div>
+</header>
 <!-- Fim sessão texto principal -->
 <!-- Sessão tipos de recicláveis -->
 <section class="informacoes">
