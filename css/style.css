@@ -230,13 +230,19 @@ button{
 }
 /* Fim estilo formulário cálculo */
 /* Estilo Contato */
-.contato{
+footer{
 	font-size: 1.2em;
 	text-align: center;
-	padding: 30px;
 	background-color: rgb(78, 82, 85);
 	color: white;
+	padding: 5px;
 }
+.container{
+	display: flex;
+	align-items: center;
+	margin-left: 520px;
+}
+
 /* Fim estilo contato */
 
 /*                                 FIM PÁGINA 5                                 */
