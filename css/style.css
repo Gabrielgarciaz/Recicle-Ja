@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 * {
 	padding: 0;
@@ -5,31 +6,32 @@
 	text-decoration: none;
 	list-style: none;
 	box-sizing: border-box;
+	font-family: 'Poppins', Arial, sans-serif;
 }
-
 /* Estilo barra de rolagem */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
 	width: 10px;
 }
-::-webkit-scrollbar-track{
-	background-color: rgb(255, 255, 255);
+::-webkit-scrollbar-track {
+	background-color: #ffffff;
 }
-::-webkit-scrollbar-thumb{
-	background-color: #bbb;
+::-webkit-scrollbar-thumb {
+	background-color: #bbbbbb;
 	border-radius: 20px;
 }
-::-webkit-scrollbar-thumb:hover{
-	background-color: #ccc;
+::-webkit-scrollbar-thumb:hover {
+	background-color: #cccccc;
 }
 /* Fim estilo barra de rolagem */
-body{
-	font-family: 'Poppins', Helvetica, sans-serif;
-}
 /* Estilo menu */
+main{
+	margin: 0px 20px;
+}
 nav {
 	height: 70px;
 	width: 100%;
-	background-color: rgb(78, 82, 85);
+	background-image: linear-gradient(to right, #093611, #008037, #093611);
+	
 }
 nav ul {
 	float: right;
@@ -41,7 +43,7 @@ nav ul li {
 	margin: 0 5px;
 }
 nav ul li a {
-	background-color: #008037;
+	background-color: #bbbbbb;
 	color: rgb(255, 255, 255);
 	font-size: 17px;
 	font-family: Arial;
@@ -50,46 +52,61 @@ nav ul li a {
 	text-transform: uppercase;
 }
 a.active, a:hover {
-	background:rgba(255, 255, 255, 0.73);
+	background-color: #4e5255;
 	transition: .5s; 
 }    
-
 /* Fim estilo menu */
 
 /*                                   PÁGINA 1                               /* 
 
 /* Estilo texto principal */
-.principal{
-	color: rgb(78, 82, 85);
-	padding: 5px;
+#principal {
+	color: #4e5255;
+	padding: 1px;
 }
-
+.container{
+	display: flex;
+	align-items: center;
+	margin-left: 200px;
+}
+.container img{
+	width: 500px;
+}
+.container h1{
+	font: bold 50px sans-serif;
+	color: #008037;
+}
 /* Fim estilo texto principal */
 /* Estilo parte informações tipos recicláveis */
-.informacoes{
-	background-color: #bbb;
-}
-.informacoes h1{
-	font-size: 1.8em;
-	color: white;
+#informacoes {
+	background-color: #bbbbbb;
 	text-align: center;
-	padding: 10px;
 }
-.info-a{
+#informacoes h1 {
+	font-size: 28px;
+	text-align: center;
+	padding: 8px;
+	text-decoration: underline;
+	color: #ffffff;
+}
+.info-a {
 	width: 320px;
-    display: inline-block;
-    margin-left: 250px;
+	display: inline-block;
 	padding: 15px;
-	color: white;
+	color: #ffffff;
+	margin: auto;
+}
+.info-a h2 {
+	color: #4e5255;
 }
 /* Fim estilo parte informações tipos recicláveis 
  
 /*                                     PÁGINA 2                             */
 
 /*    Estilo apresentação personagem    */
-.personagem{
-	color: aliceblue;
-	font-size: 1.2em;
+#personagem {
+	color: #ffffff;
+	font-size: 18px;
 	position:absolute;
     left:75%;
     top:40%;
@@ -99,12 +116,11 @@ a.active, a:hover {
 /*   Fim estilo apresentação personagem   */
 
 /*                                     PÁGINA 3                               */
-header {
-text-align: center;
-color: black;
+#calculadora-principal{
+	text-align: center;
 }
-.fotos{
-	background-color: #bbb;
+#fotos {
+	background-color: #bbbbbb;
 }
 div.box {
     width: 300px;
@@ -113,10 +129,10 @@ div.box {
     text-align: center;
 	padding: 50px;
 }
-div.box p{
-	color: white;
+div.box p {
+	color: #ffffff;
 }
-.empresas-parceiras{
+#empresas-parceiras {
 	text-align: center;
 	padding: 20px;
 }
@@ -124,12 +140,15 @@ div.box p{
 
 /* Estilo foto do sobre nóes */
 /* Estilo texto sobre nós */
-.sobre-a{
-	padding: 80px;
+#sobre {
+	padding: 85px;
 	margin-left: 460px;
 }
+#sobre h1 {
+	color: #008037;
+}
 /* Fim estilo texto sobre nós */
-.fotosobre{
+#fotosobre {
 	position:absolute;
     left:75%;
     top:40%;
@@ -138,7 +157,7 @@ div.box p{
 }
 /* Fim estilo do foto sobre nós */
 /* Estilo linha divisória vertical */
-   .linha-vertical {
+#linha-vertical {
 	border-left: 2px solid;
 	border-radius: 20px;
 	box-sizing:border-box;
@@ -154,52 +173,53 @@ div.box p{
 /*                                    PÁGINA 5                                */
 
 /* Estilo formulário cálculo*/
-.row{
+.row {
 	padding: 0 50px;
 	display: table;
 	width: 100%;
 	padding: 40px;
 }
-form{
+form {
 	width: 50%;
 	margin: 0 auto;
-	box-shadow: 0 4px 8px #999;
+	box-shadow: 0 4px 8px #999999;
 	padding: 20px;
 }
-input{
+input {
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 2px;
 }
-label{
+label {
 	font-weight: bold;
 	padding-bottom: 5px;
 	display: inline-block;
 }
-button{
-	background-color: white;
-	border: 1px solid #008037d0;
-	color: #008037d0;
+button {
+	background-color: #ffffff;
+	border: 1px solid #008037;
+	color: #008037;
 	font-weight: bold;
 	padding: 10px;
 	border-radius: 5px;
-
 }
 /* Fim estilo formulário cálculo */
 /* Estilo Contato */
-footer{
-	font-size: 1.2em;
+footer {
+	font-size: 16px;
 	text-align: center;
-	background-color: rgb(78, 82, 85);
-	color: white;
+	background-color: #4e5255;
+	color: #ffffff;
 	padding: 5px;
 }
-.container{
-	display: flex;
-	align-items: center;
-	margin-left: 520px;
+footer a{
+	color: #ffffff;
+	text-align: center;
 }
-
+footer a:hover {
+	text-decoration: underline;
+	color: rgb(99, 202, 250);
+}
 /* Fim estilo contato */
 
 /*                                 FIM PÁGINA 5                                 */
