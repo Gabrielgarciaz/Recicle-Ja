@@ -1,19 +1,23 @@
-@charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-* {
-	padding: 0;
-	margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+:root{
+	--branco: #ffffff;
+	--preto: #000000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 	text-decoration: none;
 	list-style: none;
-	box-sizing: border-box;
-	font-family: 'Poppins', Arial, sans-serif;
 }
-/* Estilo barra de rolagem */
+/* ESTILO BARRA DE ROLAGEM */
 ::-webkit-scrollbar {
 	width: 10px;
 }
 ::-webkit-scrollbar-track {
-	background-color: #ffffff;
+	background-color: var(--branco);
 }
 ::-webkit-scrollbar-thumb {
 	background-color: #bbbbbb;
@@ -22,157 +26,147 @@
 ::-webkit-scrollbar-thumb:hover {
 	background-color: #cccccc;
 }
-/* Fim estilo barra de rolagem */
-/* Estilo menu */
-main{
-	margin: 0px 20px;
+/* FIM ESTILO BARRA DE ROLAGEM */
+body{
+	font-family: 'poppins', Arial, Helvetica, sans-serif;
+	font-weight: 200;
 }
+/* ESTILO MENU */
 nav {
-	height: 70px;
-	width: 100%;
-	background-image: linear-gradient(to right, #093611, #008037, #093611);
-	
-}
-nav ul {
-	float: right;
-	margin-right: 410px;
-}
-nav ul li {
-	display: inline-block;
-	line-height: 80px;
-	margin: 0 5px;
-}
-nav ul li a {
-	background-color: #bbbbbb;
-	color: rgb(255, 255, 255);
-	font-size: 17px;
-	font-family: Arial;
-	padding: 7px 13px;
-	border-radius: 3px;
-	text-transform: uppercase;
-}
-a.active, a:hover {
-	background-color: #4e5255;
-	transition: .5s; 
-}    
-/* Fim estilo menu */
-
-/*                                   PÁGINA 1                               /* 
-
-/* Estilo texto principal */
-#principal {
-	color: #4e5255;
-	padding: 1px;
-}
-.container{
 	display: flex;
 	align-items: center;
-	margin-left: 200px;
+	
 }
-.container img{
-	width: 500px;
-}
-.container h1{
-	font: bold 50px sans-serif;
-	color: #008037;
-}
-/* Fim estilo texto principal */
-/* Estilo parte informações tipos recicláveis */
-#informacoes {
-	background-color: #bbbbbb;
-	text-align: center;
-}
-#informacoes h1 {
-	font-size: 28px;
-	text-align: center;
+header nav a {
 	padding: 8px;
+	border-radius: 5px;
+	color: #000000;
+	text-decoration: none;
+	
+}
+header nav a:hover{
 	text-decoration: underline;
-	color: #ffffff;
-}
-.info-a {
-	width: 320px;
-	display: inline-block;
-	padding: 15px;
-	color: #ffffff;
-	margin: auto;
-}
-.info-a h2 {
 	color: #4e5255;
 }
-/* Fim estilo parte informações tipos recicláveis 
- 
-/*                                     PÁGINA 2                             */
-
-/*    Estilo apresentação personagem    */
-#personagem {
-	color: #ffffff;
-	font-size: 18px;
-	position:absolute;
-    left:75%;
-    top:40%;
-    margin-left:-550px;
-    margin-top:-80px;
+/* FIM ESTILO MENU */
+main{
+	margin: 5px;
 }
-/*   Fim estilo apresentação personagem   */
-
-/*                                     PÁGINA 3                               */
-#calculadora-principal{
+/* ESTILO FOTOS GRIS */
+.destaques {
+    display: grid;
+    grid-gap: 0.2rem;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    height: calc(80vh - 60px);
+}
+.destaques__principal {
+    background: url(../img/reciclagemgrid1.jpg) center / cover no-repeat; /* position, size, repeat*/
+    grid-column: 1 / 4;    /* Onde começa e onde termina*/
+    grid-row: 1 / 3;
+}
+.destaques__secundario:nth-child(2){ /* nth-child = número do filho dentro do main*/
+    background: url(../img/reciclagemgrid2.jpg) center / cover;
+    grid-column: 4 / 4;
+    grid-row: 1 / 1;
+}
+.destaques__secundario:nth-child(3){
+    background: url(../img/reciclagemgrid3.jpg) center / cover;
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+}
+.destaques__secundario:nth-child(4){
+    background: url(../img/reciclagemgrid4.jpg) center / cover;
+    grid-column: 4 / 4;
+    grid-row: 3 / 3;
+}
+.destaques__secundario:nth-child(5){
+    background: url(../img/reciclagemgrid5.jpg) center / cover;
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
+}
+.destaques__secundario:nth-child(6){
+    background: url(../img/reciclagemgrid6.jpg) center / cover;
+    grid-column: 2 / 2;
+    grid-row: 3 / 3;
+}
+.destaques__secundario:nth-child(7){
+    background: url(../img/reciclagemgrid7.jpg) center / cover;
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+}
+/* FIM ESTILO FOTOS GRID */
+/* ESTILO TIPOS DE MATERIAIS RECICLÁVEIS */
+.tipos{
+	margin-top: 15px;
+	padding: 10px;
+	border-radius: 5px;
+}
+hr{
+	color: #ccc;
+}
+.titulo{
 	text-align: center;
+	padding: 10px;
 }
-#fotos {
-	background-color: #bbbbbb;
-}
-div.box {
-    width: 300px;
-    display: inline-block;
-    margin-left: 10px;
-    text-align: center;
-	padding: 50px;
-}
-div.box p {
-	color: #ffffff;
-}
-#empresas-parceiras {
+.info-a{
+	color: var(--preto);
+	padding: 10px;
+	border-radius: 8px;
 	text-align: center;
-	padding: 20px;
+	width: 40%;
+	display: inline-block;
+	margin-left: 60px;
+	margin-top: 10px;
+	
 }
-/*                                   PÁGINA 4                              */
-
-/* Estilo foto do sobre nóes */
-/* Estilo texto sobre nós */
-#sobre {
-	padding: 85px;
-	margin-left: 460px;
+/* FIM ESTILO TIPOS DE MATERIAIS RACICLÁVEIS */
+/* ESTILO PERSONAGEM PÁG LOCAIS */
+.personagem{
+display: flex;
+justify-content: center;
 }
-#sobre h1 {
-	color: #008037;
+.mensagem-personagem{
+	position: absolute;
+	color: var(--preto);
+	text-align: center;
+	top: 30%;
+	left: 51.5%;
+	width: 250px;
+	line-height: 30px;
+	height: 85px;
+	font-family: 'poppins'Arial, Helvetica, sans-serif;
+	font-weight: 500;
 }
-/* Fim estilo texto sobre nós */
-#fotosobre {
-	position:absolute;
-    left:75%;
-    top:40%;
-    margin-left: -350px;
-    margin-top:-73px;
+/* FIM ESTILO PERSONAGEM PÁG LOCAIS */
+/* ESTILO SOBRE */
+.sobre-a{
+	display: inline-block;
+	margin-top: 9%;
+	margin-bottom: 12%;
+	margin-left: 8%;
 }
-/* Fim estilo do foto sobre nós */
-/* Estilo linha divisória vertical */
-#linha-vertical {
+#linha-vertical{
 	border-left: 2px solid;
 	border-radius: 20px;
 	box-sizing:border-box;
 	height: 300px;
 	position:absolute;
-	left:75%;
-	top:40%;
-	margin-left: -460px;
-	margin-top:-115px;
-   }
-/* Fim estilo linha divisória vertical */  
-
-/*                                    PÁGINA 5                                */
-
-/* Estilo formulário cálculo*/
+	left: 37%;
+	top: 20%;	
+}
+/* FIM ESTILO SOBRE */
+/* ESTILO FOTOS TIPOS PARA CALCULAR */
+#fotos{
+	text-align: center;
+}
+div.box {
+    display: inline-block;
+	margin-left: 10%;
+    text-align: center;
+}
+/* FIM ESTILO FOTOS TIPOS PARA CALCULAR */
+/* ESTILO FORMULÁRIO CALCULADORA */
 .row {
 	padding: 0 50px;
 	display: table;
@@ -189,37 +183,38 @@ input {
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 2px;
+	
 }
 label {
 	font-weight: bold;
 	padding-bottom: 5px;
-	display: inline-block;
+	margin-left: 25%;
+	
 }
 button {
-	background-color: #ffffff;
+	background-color: var(--branco);
 	border: 1px solid #008037;
 	color: #008037;
 	font-weight: bold;
 	padding: 10px;
 	border-radius: 5px;
 }
-/* Fim estilo formulário cálculo */
-/* Estilo Contato */
+/* FIM ESTILO FORMULÁRIO CALCULADORA */
+/* ESTILO CONTATO */
 footer {
 	font-size: 16px;
 	text-align: center;
 	background-color: #4e5255;
-	color: #ffffff;
+	color: var(--branco);
 	padding: 5px;
+	margin-top: 10px;
 }
 footer a{
-	color: #ffffff;
+	color: var(--branco);
 	text-align: center;
 }
 footer a:hover {
 	text-decoration: underline;
 	color: rgb(99, 202, 250);
 }
-/* Fim estilo contato */
-
-/*                                 FIM PÁGINA 5                                 */
+/* FIM ESTILO CONTATO */

@@ -4,80 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RecicleJá</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/iconreciclagem.png" type="image/x-icon">
+    <title>Recicle Já</title>
 </head>
-<body>   
-<header id="navi">
-<!-- Sessão menu -->    
-    <nav>
-        <ul>
-            <li><a class="active" href="index.html">Início</a></li>
-            <li><a href="locais.html">Locais</a></li>
-            <li><a href="calculadora.html">Calculadora</a></li>
-            <li><a href="sobre.html">Sobre Nós</a></li>
-        </ul>
-    </nav>
-<!-- Fim sessão menu -->
-</header>
-<main>
-<section id="principal">
-    <div class="container">
-        <picture ondragstart="return false">
-            <source media="(max-width: 750px)" src="img/fundop.png" type="image/jpg">
-            <source media="(max-width: 1050px)" src="img/fundom.png" type="image/jpg">
-            <img src="img/fundog.png" alt="Imagem flexível com os tamanhos">
-        </picture>
-        <h1>Recicle hoje, colha amanhã!</h1>
-</section>
-<!-- Fim sessão texto principal -->
-<!-- Sessão tipos de recicláveis -->
-    <section id="informacoes">
-        <h1>Veja os tipos recicláveis:</h1>
+<body>
+    <header>
+  <!--SESSÃO MENU-->
+        <div class="container">
+            <nav>
+                <div>
+                    <img  src="img/logoreciclagem2.png" alt="Logo Reciclagem">
+                </div>
+                <div>
+                    <a href="#">INÍCIO</a>
+                    <a href="locais.html">LOCAIS</a>
+                    <a href="calculadora.html">CALCULADORA</a>
+                    <a href="sobre.html">SOBRE NÓS</a>
+                </div>
+            </nav>
+        </div>
+  <!-- FIM SESSÃO MENU -->
+    </header>
+    <main>
+        <!--SESSÃO FOTOS GRID-->
+        <section class="destaques">
+            <div class="destaques__principal caixa"> 
+            </div>
+            <div class="destaques__secundario caixa">
+            </div>
+            <div class="destaques__secundario caixa">
+            </div>
+            <div class="destaques__secundario caixa">
+            </div>
+            <div class="destaques__secundario caixa">
+            </div>
+            <div class="destaques__secundario caixa">
+            </div>
+            <div class="destaques__secundario caixa">
+        </section>
+        <!--FIM SESSÃO FOTOS GRID-->
+        <!-- SESSÃO TIPOS DE RECICLÁVEIS -->
+        <section class="tipos">
+            <h1 class="titulo">VEJA OS TIPOS DE RECICLÁVEIS</h1>
+            <hr>
             <div class="info-a">
                 <h2> PLÁSTICOS:</h2>
-                <p>- Garrafas, embalagens de produtos de limpeza;</p>
-                <p>- Potes de cremes, shampoos;</p>
-                <p>- Tubos e canos;</p>
-                <p>- Brinquedos;</p>
-                <p>- Sacos, sacolas e saquinhos de leite;</p>
-                <p>- Isopor.</p>
+                    <ul>
+                        <li>Garrafas, embalagens de produtos de limpeza;</li>
+                        <li>Potes de cremes, shampoos;</li>
+                        <li>Tubos e canos;</li>
+                        <li>Brinquedos;</li>
+                        <li>Sacos, sacolas e saquinhos de leite;</li>
+                        <li>Isopor.</li>
+                    </ul>    
                 <h2>ALUMÍNIO:</h2>
-                <p>- Latinhas de cerveja e refrigerante;</p>
-                <p>- Esquadrias e molduras de quadros;</p>
+                    <ul>
+                        <li>Latinhas de cerveja e refrigerante;</li>
+                        <li>Esquadrias e molduras de quadros;</li>
+                    </ul>   
                 <h2>METAIS FERROSOS:</h2>
-                <p>- Molas e latas.</p>
+                        <li>Molas e latas.</li>
                 <h2>PAPEL E PAPELÃO:</h2>
-                <p>- Jornais, revistas, impressos em geral;<p>
-                <p>- Papel de fax;</p>
-                <p>- Embalagens longa-vida.</p>
+                    <lu>
+                        <li>Jornais, revistas, impressos em geral;</li>
+                        <li>Papel de fax;</li>
+                        <li>Embalagens longa-vida.</li>
+                    </ul>
             </div>
-            <div class="info-a">
-                <h2>VIDRO:</h2>
-                <p>- Frascos, garrafas;</p>
-                <p>- Vidros de conserva.</p>
-                <h2>MATERIAIS NÃO RECICLÁVEIS:</h2>
-                <p>- Cerâmicas;</p>
-                <p>- Vidros pirex e similares;</p>
-                <p>- Acrílico;</p>
-                <p>- Lâmpadas fluorescentes;</p>
-                <p>- Papéis plastificados, metalizados ou parafinados (embalagens de biscoito, por exemplo)</p>
-                <p>- Papéis carbono, sanitários, molhados ou sujos de gordura;</p>
-                <p>- Fotografias;</p>
-                <p>- Espelhos;</p>
-                <p>- Pilhas e baterias de celular (estes devem ser devolvidos ao fabricante);</p>
-                <p>- Fitas e etiquetas adesivas.</p>
-                <br>
-            </div>
-    </section>
-</main>
-<!--  Fim sessão tipos de recicláveis  -->
-<footer>
-    <h2>Contato</h2>
+        <div class="info-a">
+            <h2>VIDRO:</h2>
+                <ul>
+                    <li>Frascos, garrafas;</li>
+                    <li>Vidros de conserva.</li>
+                </ul>
+            <h2>MATERIAIS NÃO RECICLÁVEIS:</h2>
+                <ul>
+                    <li>Cerâmicas;</li>
+                    <li>Vidros pirex e similares;</li>
+                    <li>Acrílico;</li>
+                    <li>Lâmpadas fluorescentes;</li>
+                    <li>Papéis plastificados, metalizados ou parafinados (embalagens de biscoito, por exemplo)</li>
+                    <li>Papéis carbono, sanitários, molhados ou sujos de gordura;</li>
+                    <li>Fotografias;</li>
+                    <li>Espelhos;</li>
+                    <li>Pilhas e baterias de celular (estes devem ser devolvidos ao fabricante);</li>
+                    <li>Fitas e etiquetas adesivas.</li>
+                </ul>
+        </div>
+        </section>
+        <!-- FIM SESSÃO TIPOS DE RECICLÁVEIS -->
+    </main>
+    <footer>
+        <!--SESSÃO CONTATO-->
+        <h2>Contato</h2>
     <p>Vem falar com a gente</p>
     <p><a href="mailto:recicleja@gmail.com">recicleja@gmail.com</a> </p>	
 	<p><a href="tel:21000000000">(21) 00000 - 0000</a></p>
-</footer> 
+    <!--FIM SESSÃO CONTATO-->
+    </footer>
 </body>
 </html>

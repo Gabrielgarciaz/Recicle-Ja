@@ -1,64 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RecicleJá - Calculadora</title>
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" href="img/iconreciclagem.png" type="image/x-icon">
+	<title>Calculadora - Recicle Já</title>
 </head>
 <body>
-<header>
-<!-- Sessão menu -->
-	<nav>
-		<ul>
-			<li><a href="index.html">Início</a></li>
-			<li><a href="locais.html">Locais</a></li>
-			<li><a class="active" href="#">Calculadora</a></li>
-			<li><a href="sobre.html">Sobre Nós</a></li>
-		</ul>
-	</nav>
-<!-- Fim sessão menu -->
-</header>
-	<br>
-	<div id="calculadora-principal">
-		<h1>Clique no item que deseja fazer o cálculo: </h1>
+<header> 
+	<!-- SESSÃO MENU -->
+	<div class="container">
+		<nav>
+			<div>
+				<a href="index.html"><img  src="img/logoreciclagem2.png" alt="Logo Reciclagem"></a>
+			</div>
+			<div>
+				<a href="index.html">INÍCIO</a>
+				<a href="locais.html">LOCAIS</a>		
+				<a href="#">CALCULADORA</a>
+				<a href="sobre.html">SOBRE NÓS</a>
+			</div>
+		</nav>
 	</div>
-	<br>
+	<!-- FIM SESSÃO MENU -->
+<hr>
+</header>
+<main>
+	<!-- SESSÃO FOTOS DE EXEMPLO -->
 	<section id="fotos">
+		<h1>TIPOS PARA CALCULAR</h1>
 		<div class="box">
-			<a href="calculo.html"><img src="img/garrafa.png" alt="Garrada Pet"></a>
+			<img src="img/garrafa.png" alt="Garrada Pet">
 			<p>Plástico</p>
 		</div>
 		<div class="box">
-			<a href="calculo.html"><img src="img/molas.jpg" alt="Mola de metal"></a>
+			<img src="img/molas.jpg" alt="Mola de metal">
 			<p>Metal</p>
 		</div>
 		<div class="box">
-			<a href="calculo.html"><img src="img/jornal.jpg" alt="Jornal de papel"></a>
+			<img src="img/jornal.jpg" alt="Jornal de papel">
 			<p>Papel</p>
 		</div>
 		<div class="box">
-			<a href="calculo.html"><img src="img/aluminio.jpg" alt="Lata de alumínio"></a>
+			<img src="img/aluminio.jpg" alt="Lata de alumínio">
 			<p>Alumínio</p>
 		</div>
 	</section>
-	<section id="empresas-parceiras">
-		<h2>Empresas parceiras</h2>
-		<p>Empresas que você pode fazer a troca do seu crédito:</p>
-		<br>
-		<br>
-		<h3>"Logo de empresas parceiras com o link direcionando para o site"</h3>
-	</section>
+	<!-- FIM SESSÃO FOTOS DE EXEMPLO -->
+	<!-- SESSÃO FORMULÁRIO -->
+	<section>
+		<div class="row">
+			<form class="card">
+				<label for="inputMaterial">Qual material você quer reciclar ?</label>
+				<input type="radio" name="material" value="checkplastico"/> Plástico
+				<input type="radio" name="material" value="checkmetal"/> Metal
+				<input type="radio" name="material" value="checkpapel"/> Papel
+				<input type="radio" name="material" value="checkaluminio"/> Alumínio
+				<br>
 
+				<label for="inputPeso">Qual é o peso do material ?</label>
+				<input type="number" id="inputPeso" placeholder="Ex: 1000 =  1kg">
+				<input type="submit" onclick="calcular()">
+			</form>
+			<br>
+		</div>
+	</section>
+	<!-- FIM SESSÃO FORMULÁRIO -->
+</main>
 <footer>
-<!-- Sessão contato -->
-    <h2>Contato</h2>
+	<!-- SESSÃO CONTATO -->
+	<h2>Contato</h2>
     <p>Vem falar com a gente</p>
     <p><a href="mailto:recicleja@gmail.com">recicleja@gmail.com</a> </p>	
 	<p><a href="tel:21000000000">(21) 00000 - 0000</a></p>
-<!-- Fim sessão contato --> 
-</footer>  
+	<!-- FIM SESSÃO CONTATO-->
+</footer>
+<script src="js/calculadora.js"></script>
 </body>
 </html>
